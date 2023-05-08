@@ -1,0 +1,27 @@
+Query: máy bay vj4 có xuất phát từ hồ chí minh không ?
+    
+**Dependency Parsing:
+nmod: vj4 -> máy bay
+nsubj: xuất phát -> vj4
+root: ROOT -> xuất phát
+case: hồ chí minh -> từ
+obl: xuất phát -> hồ chí minh
+punc: xuất phát -> ?
+
+
+**Gramatical Relations:
+(s1 PRED "xuất phát")
+(s1 LSUBJ "vj4")
+(s1 FROM "hồ chí minh")
+
+
+**Logical Form:
+WH f1: (&(FLIGHT f1)(SOURCE f1 (NAME c1 "hồ chí minh")))
+
+
+**Procedural Sematic:
+(PRINT-ALL ?f1 (FLIGHT ?f1) (DTIME ?f1 HCMC ?t1) )
+
+
+**Answer:
+Flights: VN1, VN3, VJ4, VN5, VJ3

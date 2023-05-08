@@ -1,0 +1,33 @@
+Query: máy bay nào xuất phát từ thành phố hà nội, lúc mấy giờ ?
+    
+**Dependency Parsing:
+qdet: máy bay -> nào
+nsubj: xuất phát -> máy bay
+root: ROOT -> xuất phát
+nmod: hà nội -> thành phố
+case: hà nội -> từ
+obl: xuất phát -> hà nội
+qdet: giờ -> mấy
+case: giờ -> lúc
+obl: xuất phát -> giờ
+punc: xuất phát -> ?
+
+
+**Gramatical Relations:
+(s1 PRED "xuất phát")
+(s1 LSUBJ "máy bay")
+(s1 FROM "hà nội")
+(s1 AT-TIME "giờ")
+
+
+**Logical Form:
+WH f1, t1: (&(FLIGHT f1)(SOURCE f1 (NAME c1 "hà nội")))(DEPART d1 (NAME t1 "giờ"))
+
+
+**Procedural Sematic:
+(PRINT-ALL ?f1, ?t1 (FLIGHT ?f1) (DTIME ?f1 HN ?t1) )
+
+
+**Answer:
+Flights: VJ1, VN4, VJ5
+Depart Time: 12:30HR, 9:00HR, 9:30HR

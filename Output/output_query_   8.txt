@@ -1,0 +1,27 @@
+Query: có máy bay nào xuất phát từ đà nẵng không ?
+    
+**Dependency Parsing:
+qdet: máy bay -> nào
+nsubj: xuất phát -> máy bay
+root: ROOT -> xuất phát
+case: đà nẵng -> từ
+obl: xuất phát -> đà nẵng
+punc: xuất phát -> ?
+
+
+**Gramatical Relations:
+(s1 PRED "xuất phát")
+(s1 LSUBJ "máy bay")
+(s1 FROM "đà nẵng")
+
+
+**Logical Form:
+WH f1: (&(FLIGHT f1)(SOURCE f1 (NAME c1 "đà nẵng")))
+
+
+**Procedural Sematic:
+(PRINT-ALL ?f1 (FLIGHT ?f1) (DTIME ?f1 ĐN ?t1) )
+
+
+**Answer:
+Flights: VN2, VJ2

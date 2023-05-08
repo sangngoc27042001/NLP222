@@ -1,0 +1,30 @@
+Query: máy bay nào bay từ hà nội đến huế ?
+    
+**Dependency Parsing:
+qdet: máy bay -> nào
+nsubj: bay -> máy bay
+root: ROOT -> bay
+case: hà nội -> từ
+obl: bay -> hà nội
+case: huế -> đến
+obl: bay -> huế
+punc: bay -> ?
+
+
+**Gramatical Relations:
+(s1 PRED "bay")
+(s1 LSUBJ "máy bay")
+(s1 FROM "hà nội")
+(s1 TO "huế")
+
+
+**Logical Form:
+WH f1: (&(FLIGHT f1)(SOURCE f1 (NAME c1 "hà nội"))(DEST f1 (NAME c2 "huế")))
+
+
+**Procedural Sematic:
+(PRINT-ALL ?f1 (FLIGHT ?f1) (DTIME ?f1 HN ?t1) (ATIME ?f1 HUE ?t2) (RUN-TIME ?f1 HN HUE ?t3))
+
+
+**Answer:
+Flights: VJ1

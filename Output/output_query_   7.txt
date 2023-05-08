@@ -1,0 +1,38 @@
+Query: thời gian máy bay vn4 bay từ thành phố  hà nội đến đà nẵng mất mấy giờ ?
+    
+**Dependency Parsing:
+nmod: vn4 -> máy bay
+nmod: thời gian -> vn4
+acl: vn4 -> bay
+nmod: hà nội -> thành phố
+case: hà nội -> từ
+obl: bay -> hà nội
+case: đà nẵng -> đến
+obl: bay -> đà nẵng
+nsubj: mất -> thời gian
+root: ROOT -> mất
+qdet: giờ -> mấy
+dobj: mất -> giờ
+punc: mất -> ?
+
+
+**Gramatical Relations:
+(s1 PRED "mất")
+(s1 LSUBJ "thời gian")
+(s1 LOBJ "giờ")
+(s2 LSUBJ "vn4")
+(s2 PRED "bay")
+(s2 FROM "hà nội")
+(s2 TO "đà nẵng")
+
+
+**Logical Form:
+WH t3: (&(FLIGHT vn4)(SOURCE vn4 (NAME c1 "hà nội"))(DEST vn4 (NAME c2 "đà nẵng")))(RUN-TIME r1 t3)
+
+
+**Procedural Sematic:
+(PRINT-ALL ?t3 (FLIGHT VN4) (DTIME VN4 HN ?t1) (ATIME VN4 ĐN ?t2) (RUN-TIME VN4 HN ĐN ?t3))
+
+
+**Answer:
+Run Time: 2:00HR

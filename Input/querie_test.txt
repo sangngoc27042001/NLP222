@@ -1,0 +1,9 @@
+Máy bay nào đến thành phố Huế lúc 11:00HR ?
+Máy bay nào bay từ TP. Hồ Chí Minh đến TP. Hải Phòng mất 2 giờ ?
+Hãy cho biết mã hiệu các máy bay hạ cánh ở Đà Nẵng ?
+Máy bay nào xuất phát từ Tp.Hà Nội, lúc mấy giờ ?
+Máy bay nào bay từ Hà Nội đến huế ?
+Máy bay VJ4 có xuất phát từ Hồ Chí Minh không ?
+Thời gian máy bay VN4 bay từ TP. Hà Nội đến Đà Nẵng mất mấy giờ ?
+Có máy bay nào xuất phát từ Đà Nẵng không ?
+Có máy bay nào bay từ Hà Nội đến Khánh Hòa không ?

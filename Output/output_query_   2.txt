@@ -1,0 +1,37 @@
+Query: máy bay nào bay từ thành phố  hồ chí minh đến thành phố  hải phòng mất 2 giờ ?
+    
+**Dependency Parsing:
+qdet: máy bay -> nào
+nsubj: bay -> máy bay
+root: ROOT -> bay
+nmod: hồ chí minh -> thành phố
+case: hồ chí minh -> từ
+obl: bay -> hồ chí minh
+nmod: hải phòng -> thành phố
+case: hải phòng -> đến
+obl: bay -> hải phòng
+advmod: bay -> mất
+nummod: giờ -> 2
+dobj: mất -> giờ
+punc: bay -> ?
+
+
+**Gramatical Relations:
+(s1 PRED "bay")
+(s1 LSUBJ "máy bay")
+(s1 LOBJ "giờ")
+(s1 FROM "hồ chí minh")
+(s1 TO "hải phòng")
+(s1 TAKE "H")
+
+
+**Logical Form:
+WH f1: (&(FLIGHT f1)(SOURCE f1 (NAME c1 "hồ chí minh"))(DEST f1 (NAME c2 "hải phòng")))(RUN-TIME r1 (NAME t3 "2:00HR"))
+
+
+**Procedural Sematic:
+(PRINT-ALL ?f1 (FLIGHT ?f1) (DTIME ?f1 HCMC ?t1) (ATIME ?f1 HP ?t2) (RUN-TIME ?f1 HCMC HP 2:00HR))
+
+
+**Answer:
+Flights: VN3, VJ3

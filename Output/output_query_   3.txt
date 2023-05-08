@@ -1,0 +1,29 @@
+Query: hãy cho biết mã hiệu các máy bay hạ cánh ở đà nẵng ?
+    
+**Dependency Parsing:
+qdet: mã hiệu -> hãy cho biết
+det: máy bay -> các
+nmod: máy bay -> mã hiệu
+nsubj: hạ cánh -> máy bay
+root: ROOT -> hạ cánh
+case: đà nẵng -> ở
+obl: hạ cánh -> đà nẵng
+punc: hạ cánh -> ?
+
+
+**Gramatical Relations:
+(s1 PRED "hạ cánh")
+(s1 LSUBJ "máy bay")
+(s1 TO "đà nẵng")
+
+
+**Logical Form:
+WH f1: (&(FLIGHT f1)(DEST f1 (NAME c2 "đà nẵng")))
+
+
+**Procedural Sematic:
+(PRINT-ALL ?f1 (FLIGHT ?f1) (ATIME ?f1 ĐN ?t2) )
+
+
+**Answer:
+Flights: VN4, VJ4
